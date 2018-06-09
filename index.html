@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-<title>W3.CSS Template</title>
+<html lang="en">
+<title>Home: IgnitedSpaces</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -20,9 +20,11 @@ img {margin-bottom: -7px}
 @media only screen and (max-width: 720px) {
   .logo{
     width: 200px;
+    margin-left: -25px;
   }
   .ham{
     font-size: 20px;
+    margin-right: -25px;
 
   }
 }
@@ -64,24 +66,31 @@ nav ul li{
   background-color: rgba(221, 140, 9, 1);
   padding: 10px;
 }
+.tour-link-main{
+  color: rgba(221, 140, 9, 1);
+  text-decoration: none;
+}
 </style>
 <body>
 
 <!-- Hamburger Menu Open(full screen) -->
 <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:24px 24px;margin-top:20px;">
     <i class="fa fa-remove"></i>
   </a>
   <div class="w3-bar-block w3-center">
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photos</a>
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Shop</a>
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">HOME</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">SPACES</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">STUDIOS</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">EVENTS</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">CULTURE</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">FAQ</a>
+    <a href="#" class="w3-bar-item tour-link-main">SCHEDULE TOUR</a>
   </div>
 </nav>
 
 <header>
-  <img class="logo" src="logo.png" alt="Ignited Spaces Logo.">
+  <img class="logo" src="img/logo.png" alt="Ignited Spaces Logo.">
   <nav>
     <ul>
       <li>HOME</li>
