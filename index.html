@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Montserrat", sans-serif}
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
+.ham-hidden{
+  display: none;
+}
+.ham{
+  font-size: 40px;
+}
+/* Turn off Ham Menu on Large Screens*/
+@media only screen and (max-width: 720px) {
+  .logo{
+    width: 200px;
+  }
+  .ham{
+    font-size: 20px;
+
+  }
+}
+/* Turn off Ham Menu on Large Screens*/
+@media only screen and (max-width: 1563px) {
+    .ham-hidden{
+      display: inline-block;
+      float: right;
+    }
+    nav{
+      display: none;
+    }
+}
+header{
+  background-color: #000000;
+  padding: 40px;
+}
+header img{
+  width: 400px;
+  display: inline-block;
+  /* padding-right: 100px; */
+}
+nav {
+  font-size: 20px;
+  color: white;
+  float: right;
+  margin-bottom: 10px;
+  position: relative;
+  bottom: 10px;
+}
+nav ul{
+  list-style-type: none;
+}
+nav ul li{
+  padding: 0 30px;
+  display: inline-block;
+}
+.tour-link{
+  background-color: rgba(221, 140, 9, 1);
+  padding: 10px;
+}
+</style>
+<body>
+
+<!-- Hamburger Menu Open(full screen) -->
+<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photos</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Shop</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+  </div>
+</nav>
+
+<header>
+  <img class="logo" src="img/logo.png" alt="Ignited Spaces Logo.">
+  <nav>
+    <ul>
+      <li>HOME</li>
+      <li>SPACES</li>
+      <li>STUDIOS</li>
+      <li>EVENTS</li>
+      <li>CULTURE</li>
+      <li>FAQ</li>
+      <li class="tour-link">SCHEDULE TOUR</li>
+    </ul>
+  </nav>
+  <div class="ham-hidden">
+    <span class="w3-right ham" onclick="w3_open()"><i class="fa fa-bars" style="color: white;cursor: pointer;"></i></span>
+  </div>
+</header>
+
+
+
+
+
+
+
+<script>
+// Open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.width = "100%";
+    document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
